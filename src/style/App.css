@@ -35,6 +35,7 @@
   display: grid;
   -ms-grid-columns: 3fr 1fr;
       grid-template-columns: 3fr 1fr;
+  gap: 20px;
 }
 
 .header {
