@@ -1,0 +1,17 @@
+@media only screen and (max-width: 870px) {
+    .header {
+        .headerContainer {
+            &__searchBox, &__right {
+                display: none;
+            }
+
+            &__hamburger {
+                display: inline;
+            }
+        }
+    }
+
+    .main-container {
+        grid-template-columns: auto;
+    }
+}

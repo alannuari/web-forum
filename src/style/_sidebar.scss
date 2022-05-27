@@ -1,0 +1,41 @@
+.sideBar {
+    padding: 10px;
+    font-family: 'Sans Web Regular';
+
+    &__title {
+        font-size: 20px;
+    }
+
+    &__topics {
+        font-size: 14px;
+
+        ul {
+            list-style: none;
+
+            li {
+                display: flex;
+                padding: 10px 0;
+
+                .numberContainer {
+                    .number {
+                        width: 20px;
+                        padding: 3px 0;
+                        text-align: center;
+                        background-color: $brown-dark-color;
+                        color: white;
+                    }
+                }
+
+                a {
+                    margin-left: 10px;
+                    text-decoration: none;
+                    color: $black-color;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}

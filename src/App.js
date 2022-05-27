@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import './style/App.css';
+import AddComment from "./components/AddComment";
+import Content from "./components/Content";
+import Navigation from "./components/Navigation";
+import Sidebar from "./components/Sidebar";
 
 function App() {
+
+  const [mobileMenu, setmobileMenu] = useState(false);
+
+  const toggle = () => {
+      setmobileMenu(!mobileMenu);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navigation hamburgerMenu={mobileMenu} toggleMenu={toggle} />
+      <main className="main-container">
+        <div>
+          <Content />
+          <AddComment />
+        </div>
+        <Sidebar />
+      </main>
+    </>
   );
 }
 

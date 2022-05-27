@@ -1,0 +1,39 @@
+.comment {
+    display: flex;
+    padding: 20px 0;
+
+    .image {
+        width: 80px;
+        margin-right: 20px;
+    }
+
+    .date {
+        font-size: 14px;
+    }
+
+    .point {
+        padding-top: 20px;
+    }
+
+    button {
+        background-color: $gray-color;
+        border: none;
+        cursor: pointer;
+        padding: 4px 6px;
+        margin-left: 5px;
+    }
+
+    .comment-reply {
+        display: flex;
+        padding-top: 20px;
+
+        .image-reply {
+            width: 30px;
+            margin-right: 20px;
+        }
+
+        .point-reply {
+            padding-top: 20px;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.addComment {
+    font-family: 'Sans Web Regular';
+
+    h2 {
+        font-size: 24px;
+    }
+
+    form {
+        padding: 10px 5px;
+
+        input, textarea {
+            display: block;
+            padding: 10px;
+            margin: 10px 0;
+            outline: none;
+            border: 1px solid $gray-color;
+            border-radius: 5px;
+        }
+
+        textarea {
+            max-width: 400px;
+            width: 100%;
+        }
+
+        p {
+            color: red;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        button {
+            cursor: pointer;
+            border: none;
+            padding: 8px 14px;
+            margin: 0 2px;
+            border-radius: 5px;
+        }
+
+        .reset {
+            background-color: $gray-color;
+        }
+
+        .submit {
+            background-color: $brown-color;
+            color: white;
+        }
+    }
+}
