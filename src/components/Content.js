@@ -7,7 +7,7 @@ const Content = () => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:8000/data').then((res) => {
+        axios.get('https://62bdc90cbac21839b60b2419.mockapi.io/comments').then((res) => {
             setData(res.data);
         })
     }, []);

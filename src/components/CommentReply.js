@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowDown, faArrowUp } from '@fortawesome/free-solid-svg-icons';
+import { showFormattedDate } from '../utils';
 
 const CommentReply = ({ reply }) => {
     const [point, setPoint] = useState(reply.point);
@@ -27,7 +28,7 @@ const CommentReply = ({ reply }) => {
             </div>
             <div>
                 <h3>{reply.author}</h3>
-                <span className='date'>{reply.date}</span>
+                <span className='date'>{showFormattedDate(reply.date)}</span>
                 <p>{reply.message}</p>
                 <div className='point-reply'>
                     <span>{point} point</span>

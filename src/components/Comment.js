@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowDown, faArrowUp } from '@fortawesome/free-solid-svg-icons';
 import CommentReply from './CommentReply';
+import { showFormattedDate } from '../utils';
 
 const Comment = ({ data }) => {
     const [point, setPoint] = useState(data.point);
@@ -30,7 +31,7 @@ const Comment = ({ data }) => {
                     </div>
                     <div>
                         <h3>{data.author}</h3>
-                        <span className='date'>{data.date}</span>
+                        <span className='date'>{showFormattedDate(data.date)}</span>
                         <p>{data.message}</p>
                         <div className='point'>
                             <span>{point} point</span>

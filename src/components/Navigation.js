@@ -140,7 +140,7 @@ const Navigation = ({ hamburgerMenu, toggleMenu }) => {
 
                         <form onSubmit={handleSubmit}>
                             <label>Email</label>
-                            <input type='text' name='email' value={formValues.email} onChange={handleChange} />
+                            <input type='text' name='email' value={formValues.email} onChange={handleChange} style={{borderColor: !formErrors.email ? 'red' : 'green'}} />
                             <p>{formErrors.email}</p>
                             <label>Password</label>
                             <input type='password' name='password' value={formValues.password} onChange={handleChange} />
